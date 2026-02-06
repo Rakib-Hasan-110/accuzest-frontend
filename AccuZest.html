@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AccuZest | Hospital ERP & Healthcare Consultancy</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif']
+        },
+        extend: {
+          colors: {
+            primary: '#1A5276',
+            secondary: '#D1F2EB'
+          }
+        }
+      }
+    }
+  </script>
+  </head>
+
+  <body class="font-sans text-gray-800">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed w-full bg-white shadow z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- LOGO -->
+        <div class="flex items-center h-full">
+          <img
+            src="assets/logo (2).png"
+            alt="AccuZest Hospital ERP Logo"
+            class="h-14 md:h-16 w-auto object-contain">
+        </div>
+
+        <!-- DESKTOP NAV -->
+        <nav class="hidden md:flex space-x-8 font-medium">
+          <a href="#modules" class="hover:text-primary">Modules</a>
+          <a href="#dashboard" class="hover:text-primary">Dashboard</a>
+          <a href="#features" class="hover:text-primary">Features</a>
+          <a href="#roles" class="hover:text-primary">Roles</a>
+          <a href="#contact" class="hover:text-primary">Contact</a>
+        </nav>
+
+        <!-- CTA -->
+        <button
+          class="hidden md:block bg-primary text-white px-5 py-2 rounded-lg hover:opacity-90">
+          Request Demo
+        </button>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu"
+        class="hidden md:hidden bg-white px-6 pb-4 space-y-3">
+        <a href="#modules" class="block">Modules</a>
+        <a href="#dashboard" class="block">Dashboard</a>
+        <a href="#features" class="block">Features</a>
+        <a href="#roles" class="block">Roles</a>
+        <a href="#contact" class="block">Contact</a>
+      </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section
+      class="pt-32 pb-24 bg-gradient-to-r from-primary to-teal-500 text-white">
+      <div
+        class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+            Smart Hospital ERP & <br> Healthcare Consultancy Solution
+          </h2>
+          <p class="mt-6 text-lg opacity-90">
+            AccuZest integrates hospital operations, neuro-marketing,
+            recruitment, academic training, and financial intelligence
+            into one powerful cloud-based platform.
+          </p>
+          <div class="mt-8 flex gap-4">
+            <button
+              class="bg-white text-primary px-6 py-3 rounded-lg font-semibold">
+              Get Started
+            </button>
+            <button class="border border-white px-6 py-3 rounded-lg">
+              View Modules
+            </button>
+          </div>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3"
+          class="rounded-xl shadow-lg" alt="Hospital Dashboard" />
+      </div>
+    </section>
+
+    <!-- ================= MODULES ================= -->
+    <section id="modules" class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-14">Core Modules</h3>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-xl mb-3 text-center">🏥 Hospital Management</h4>
+            <p class="p-2 text-center">Complete OPD & IPD workflow including patient registration,
+              prescriptions, beds, pharmacy and billing.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-xl mb-3 text-center">📈 Marketing &
+              Neuro-Marketing</h4>
+            <p class="p-2 text-center">Door-to-Outdoor lead tracking, referral analytics and patient
+              behavior intelligence.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-xl mb-3 text-center">👥 HR & Academic
+              Training</h4>
+            <p class="p-2 text-center">Recruitment portal, interview scheduling, LMS,
+              training exams and certification.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-xl mb-3 text-center">💰 Finance & Inventory</h4>
+            <p class="p-2 text-center">Cash flow analysis, profit & loss reports,
+              medical equipment & inventory control.</p>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="font-semibold text-xl mb-3 text-center">♻️ Waste Management</h4>
+            <p class="p-2 text-center">Medical waste tracking, pickup scheduling
+              and regulatory compliance monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DASHBOARD ================= -->
+    <section id="dashboard" class="py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-12">ERP Dashboard
+          Preview</h3>
+
+        <div class="grid md:grid-cols-4 gap-6 mb-10">
+          <div class="bg-secondary p-6 rounded-xl text-center">
+            <h4 class="text-2xl font-bold counter" data-target="1250">0</h4>
+            <p>Total Patients</p>
+          </div>
+          <div class="bg-secondary p-6 rounded-xl text-center">
+            <h4 class="text-2xl font-bold counter" data-target="180">0</h4>
+            <p>Today OPD</p>
+          </div>
+          <div class="bg-secondary p-6 rounded-xl text-center">
+            <h4 class="text-2xl font-bold counter" data-target="320000">0</h4>
+            <p>Monthly Revenue</p>
+          </div>
+          <div class="bg-secondary p-6 rounded-xl text-center">
+            <h4 class="text-2xl font-bold counter" data-target="75">0</h4>
+            <p>Active Leads</p>
+          </div>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561"
+          class="rounded-xl shadow-lg" alt="Dashboard Preview">
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section id="features" class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-3xl font-bold text-center mb-14">Why AccuZest?</h3>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <ul class="space-y-4">
+            <li>✔ Door-to-Outdoor Patient Acquisition System</li>
+            <li>✔ Neuro-Marketing & Patient Sentiment Analysis</li>
+            <li>✔ Automated Training & Certification</li>
+            <li>✔ Role-Based Secure Access</li>
+          </ul>
+          <img
+            src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0"
+            class="rounded-xl shadow" alt="Healthcare Technology">
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= USER ROLES ================= -->
+    <section id="roles" class="py-24">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-10">User Roles</h3>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="p-5 border rounded-lg">Admin</div>
+          <div class="p-5 border rounded-lg">Doctors & Staff</div>
+          <div class="p-5 border rounded-lg">Marketing Team</div>
+          <div class="p-5 border rounded-lg">HR Manager</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section id="contact"
+      class="py-20 bg-gradient-to-r from-primary to-teal-500 text-white text-center">
+      <h3 class="text-3xl font-bold mb-4">Digitize Your Hospital with
+        AccuZest</h3>
+      <p class="mb-8">Smart, Secure & Scalable Healthcare ERP Solution</p>
+      <button class="bg-white text-primary px-8 py-3 rounded-lg font-semibold">
+        Request a Demo
+      </button>
+    </section>
+
+    <section id="contact" class="py-20 px-6 bg-blue-50 text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="mb-8 text-lg">Ready to transform your healthcare practice?</p>
+      <form class="max-w-md mx-auto flex flex-col gap-4">
+        <input type="text" placeholder="Your Name"
+          class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          required>
+        <input type="email" placeholder="Your Email"
+          class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          required>
+        <textarea placeholder="Your Message" rows="4"
+          class="p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        <button type="submit"
+          class="bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-semibold">Send
+          Message</button>
+      </form>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-teal-800 text-white">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-4 gap-10">
+
+          <!-- BRAND / ABOUT -->
+          <div>
+            <img
+              src="assets/logo (2).png"
+              alt="AccuZest Logo"
+              class="h-14 mb-4 bg-white p-2 rounded-lg w-auto object-contain">
+            <p class="text-sm leading-relaxed opacity-90">
+              AccuZest is a smart, cloud-based Hospital ERP & Healthcare
+              Consultancy Solution designed to digitize hospital operations,
+              patient management, neuro-marketing, training, and financial
+              intelligence in one unified platform.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+            <div class="flex gap-3 mt-6">
+              <a href="#"
+                class="w-9 h-9 flex items-center justify-center border border-white/40 rounded hover:bg-white hover:text-primary transition">
+                <svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24"><path
+                    d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12" /></svg>
+              </a>
+              <a href="#"
+                class="w-9 h-9 flex items-center justify-center border border-white/40 rounded hover:bg-white hover:text-primary transition">
+                <svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24"><path
+                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.38 8.6 8.6 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.3 3.9A12.1 12.1 0 0 1 3.1 4.9a4.27 4.27 0 0 0 1.33 5.7 4.2 4.2 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.44 4.2 4.3 4.3 0 0 1-1.93.07 4.28 4.28 0 0 0 4 3 8.6 8.6 0 0 1-5.3 1.83A8.8 8.8 0 0 1 2 19.5a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2v-.56A8.7 8.7 0 0 0 22.46 6z" /></svg>
+              </a>
+              <a href="#"
+                class="w-9 h-9 flex items-center justify-center border border-white/40 rounded hover:bg-white hover:text-primary transition">
+                <svg class="w-4 h-4" fill="currentColor"
+                  viewBox="0 0 24 24"><path
+                    d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.4c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 11.4h-3v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.5h-3v-10h2.9v1.4h.1c.4-.8 1.4-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.9v5.4z" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- MORE LINKS -->
+          <div>
+            <h4 class="font-semibold text-lg mb-4">More Links</h4>
+            <ul class="space-y-2 text-sm opacity-90">
+              <li><a href="#" class="hover:underline">LIS Integration</a></li>
+              <li><a href="#" class="hover:underline">Blog</a></li>
+              <li><a href="#" class="hover:underline">Our Clients</a></li>
+              <li><a href="#" class="hover:underline">Hospital
+                  Directory</a></li>
+              <li><a href="#" class="hover:underline">FAQ</a></li>
+            </ul>
+          </div>
+
+          <!-- FEATURES -->
+          <div>
+            <h4 class="font-semibold text-lg mb-4">Features</h4>
+            <ul class="space-y-2 text-sm opacity-90">
+              <li>Easy to Use Interface</li>
+              <li>Works on All Devices</li>
+              <li>Always Up to Date</li>
+              <li>Integrated SMS & Email</li>
+              <li>Attendance & HR Automation</li>
+            </ul>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div>
+            <h4 class="font-semibold text-lg mb-4">Contact Info</h4>
+            <ul class="space-y-3 text-sm opacity-90">
+              <li>📍 Dhaka, Bangladesh</li>
+              <li>✉️ info@accuzest.com</li>
+              <li>📞 +880 1XXX-XXXXXX</li>
+              <li>📞 +880 1XXX-XXXXXX</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="bg-black/10 text-center py-4 text-sm">
+        © 2026 AccuZest. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+  // Mobile menu
+  document.getElementById("menuBtn").onclick = () => {
+    document.getElementById("mobileMenu").classList.toggle("hidden");
+  };
+
+  // Counter animation
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    const update = () => {
+      const target = +counter.dataset.target;
+      const current = +counter.innerText;
+      const increment = target / 80;
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment);
+        setTimeout(update, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    update();
+  });
+</script>
+
+  </body>
+</html>
